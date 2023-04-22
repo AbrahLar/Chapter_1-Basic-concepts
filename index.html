@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/mathjax/es5/tex-mml-chtml.js"></script>
+    <title>Chapter 1</title>
+</head>
+<body>
+    <h1>Basic concepts</h1>
+    <p>
+        An <b>electric circuit</b> is an interconnection of electrical elements.
+    </p>
+    <h2>Charge and current</h2>
+    <p> 
+        <b>Charge</b> is an electrical property of the atomic particles of which mater consists,
+        mesuared in coulumbs \((\pu{C})\).<br>
+        The following points should be noted about electric charge:
+        <ol>
+            <li>
+                We know that the charge \(\pu{e}\) on an electron is negative \(\pu{1 e} \approx
+                \pu{-1.602 \times 10^{-19} C}\). In \(\pu{-1 C}\) of charge, there are
+                approximately \(6.242 \times 10^{18}\) electrons.
+            </li>
+            <li>
+                The only charges that occur in nature are integral multiples of the electron
+                charge.
+            </li>
+            <li>
+                The <em>law of conservation of charge</em> states that charge can neither be
+                created nor destroyed, only transferred.
+            </li>
+        </ol>
+    </p>
+    <p>
+        <b>Electric current</b> is the time rate of change of charge, mesuered in amperes
+        \((\pu{A}\)).<br>
+        Mathematically the relationship between current, charge and time is: 
+        $$ i \overset{\Delta}{=} \frac{\mathrm{d} q}{\mathrm{d} t} $$
+        The charge transferred between time \(t_{0}\) and \(t\) is obtained by integrating the
+        current:
+        $$ Q \overset{\Delta}{=} \int _{t_{0}} ^{t} i \ \mathrm{d} t $$
+        Where:<br>
+        \(i\) is the current \((\pu{A})\).<br>
+        \(q\) is the charge \((\pu{C})\).<br>
+        \(t\) and \(t_{0}\) are a specific times \((\pu{s})\)
+    </p>
+    <p>
+        It is conventional to take the current flow as the movement of positive charges. That is,
+        opposite to the flow of negative charges.
+    </p>
+    <p style="color:Tomato;">Image 1</p>
+    <p>
+        A <b>direct current</b> (dc) \((I)\) is a current that remains constant with time.
+    </p>
+    <p style="color:Tomato;">Image 2</p>
+    <p>
+        An <b>alternating current</b> (ac) \((i)\) is a current that varies sinusoidally with time.
+    </p>
+    <p style="color:Tomato;">Image 3</p>
+    <h2>Voltage</h2>
+    <p>
+        <b>Voltage</b> (or potential difference) is the energy required to move a unit charge
+        through an element, measured in volts \((\pu{V})\).
+        $$ v_{ab} \overset{\Delta}{=} \frac{\mathrm{d} w}{\mathrm{d} q} $$
+        Where:<br>
+        \(v_{ab}\) is the voltage between the points \(a\) and \(b\) \((\pu{V})\).<br>
+        \(w\) is the energy requiered \((\pu{J})\).<br>
+        \(q\) is the charge \((\pu{C})\).
+    </p>
+    <p>
+        The potential at point \(a\) with respect to point \(b\) is \(v_{ab}\). In general:
+        $$ v_{ab} = -v_{ba} $$
+    </p>
+    <p style="color:Tomato;">Image 4</p>
+    <p>
+        Like electric current, a constant voltage is called a dc voltage \((V)\), whereas a
+        sinusoidally time-varying voltage is called an ac voltage \((v)\).
+    </p>
+    <h2>Power and energy</h2>
+    <p>
+        <b>Power</b> is the time rate of expending or absorbing energy, measured in watts
+        \((\mathrm{W})\).
+        $$ p \overset{\Delta}{=} \frac{\mathrm{d} w}{\mathrm{d} t} $$
+        Where:<br>
+        \(p\) is the power \((\pu{W})\).<br>
+        \(w\) is energy \((\pu{J})\).<br>
+        \(t\) is the time \((\pu{s})\).<br>
+        Or
+        $$ p = vi $$
+        If \(p > 0\), power is being absorbed by the element. If, on the other hand, \(p < 0\),
+        power is being supplied by the
+        element.<br>
+        The sum of power in a circuit, at any instant of time, must be zero.
+        $$ \sum p = 0 $$
+    </p>
+    <p>
+        <b>Energy</b> is the capacity to do work, measured in joules \((\pu{J})\).<br>
+        The energy absorbed or supplied by an element from time \(t_{0}\) to time \(t\) is:
+        $$ w = \int _{t_{0}} ^{t} p \ \mathrm{d} t $$
+        The electric power utility companies measure energy in watt-hours \((\pu{W*h})\).
+        \(\pu{1 W*h = \pu{3,600 J}}\).
+    </p>
+    <p style="color:Tomato;">Image 5</p>
+    <h2>Circuit elements</h2>
+    <p>
+        An <em>active element</em> is capable of generating energy while a <em>passive element</em>
+        is not.<br>
+        An ideal <b>independent source</b> is an active element that provides aspecified voltage or
+        current that is completely independent of other circuit elements.<br>
+    </p>
+    <p style="color:Tomato;">Image 6</p>
+    <p>
+        An ideal <b>dependent</b> (or controlled) <b>source</b> is an active element in which the
+        source quantity is controlled by another voltage or current.
+    </p>
+    <p style="color:Tomato;">Image 7</p>
+</body>
+</html>
